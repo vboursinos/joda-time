@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package org.joda.example.time;
+package org.joda.time.benchmark;
 
 import java.util.Locale;
 
@@ -39,6 +39,13 @@ public class Examples {
         System.out.println("time: " + (end - start));
     }
 
+    public void main() {
+        try {
+            new Examples().run();
+        } catch (Throwable ex) {
+            ex.printStackTrace();
+        }
+    }
     private void run() {
         runInstant();
         System.out.println();
